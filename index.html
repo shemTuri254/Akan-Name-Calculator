@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan-Name_calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AKAN NAME CALCULATOR</h1>
+    <img src="images/math.jpg" class="Centre" alt="Math Wallpaper"><br>
+
+    <p>This is a web-application that allows users to know the day they were born.
+        It is achieved when the users input their date of birth. The web-application will then output the Akan name
+        depending on the gender of the users.
+    </p><br />
+    <button onclick="document.getElementById('popup').style.display='block'">
+        Find Akan Name</button>
+    <div id="popup" class="modal">
+        <form class="modal-content animate" id="form">
+            <div class="container">
+                <label for="date">Enter your date of birth</label>
+                <input type="date" id="date" name="Enter your date of birth" required>
+                <div id="gender" required>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="male" id="male">
+                        <label class="form-check-label" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios1" value="female" id="female">
+                        <label class="form-check-label" for="female">
+                            Female
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="container">
+                    <button type="button" onclick="document.getElementById('popup').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                </div>
+        </form>
+        <script src="./popup.js"></script>
+</body>
+
+</html>
