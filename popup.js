@@ -13,15 +13,17 @@ window.addEventListener("DOMContentLoaded", function(){
         userDate = dateDay;
         console.log(dateDay);
 
-        let gender = document.querySelector("#gender").value;
+        let gender = ("input:radio[name=gender]:checked").val;
+        
         let male = ['Kwasi','Kwadwo', 'Kwabena', 'Kwako', 'Yaw', 'Kofi', 'Kwame']
         let female = ['Akoswa', 'Adwoa', 'Abenaa', 'Akua', 'Yua', 'Afua', 'Ama']
+        console.log("checked")
 
-        if(gender === "female"){
-            alert(female[userDate]);
-        }
-        else if(gender === "male"){
+        if(gender === "m"){
             alert(male[userDate]);
+        }
+        else if(gender === "f"){
+            alert(female[userDate]);
         }
         else{
           alert ("Invalid Option") 
