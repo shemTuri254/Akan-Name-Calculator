@@ -23,19 +23,14 @@
             <div class="container">
                 <label for="date">Enter your date of birth</label>
                 <input type="date" id="date" name="Enter your date of birth" required>
-                 <div class="form-group">
-                    <label for="month">Gender</label><br>
-                    <div class="form-check-inline">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" value="m" id="male">&nbsp; Male 
-                      </label>
-                    </div>
-                    <div class="form-check-inline">
-                      <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" value="f" id="female">&nbsp; Female 
-                      </label>
-                    </div>
-                  </div>
+              </select>
+              <br>
+              <label for="gender">Gender</label>
+              <select class="form-control" id="gender">
+                <option name="gender" value="m">male</option>
+                <option name="gender" value="f">female</option>
+              </select>
+              <br> <br>
                     <button type="submit">Submit</button>
                 </div>
                 <div class="container">
