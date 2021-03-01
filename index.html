@@ -15,7 +15,18 @@
     <p>This is a web-application that allows users to know the day they were born.
         It is achieved when the users input their date of birth. The web-application will then output the Akan name
         depending on the gender of the users.
-    </p><br />
+    </p>
+    <p>Akan names are names derived in the Ghanian culture were by a child is named according to the day of the week they were born and gender.
+      They include</p>
+      <h2>Male</h2>
+      <li>
+      Sunday: Kwasi  Monday: Kwadwo  Tuesday: Kwabena  Wednesday: Kwaku  Thursday:  Yaw  Friday: Kofi  Saturday: Kwame
+    </li>
+      <h3>Female</h3>
+      <li>
+      Sunday: Akosua  Monday: Adwoa Tuesday: Abenaa Wednesday: Akua Thursday:  Yaa Friday: Afua Saturday: Ama
+    </li>
+    <br />
     <button onclick="document.getElementById('popup').style.display='block'">
         Find Akan Name</button>
     <div id="popup" class="modal">
@@ -26,7 +37,9 @@
               </select>
               <br>
               <label for="gender">Gender</label>
+              <br> 
               <select class="form-control" id="gender">
+                <option name="gender" >Enter your gender</option>
                 <option name="gender" value="m">male</option>
                 <option name="gender" value="f">female</option>
               </select>
